@@ -20,6 +20,7 @@ pytest = "^7.4.2"
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.5.1"
 pylint = "^2.17.5"
+autoflake8 = "^0.4.1"
 
 [build-system]
 requires = ["poetry-core"]

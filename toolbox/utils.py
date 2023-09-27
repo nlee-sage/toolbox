@@ -10,9 +10,22 @@ Notes:
 import datetime
 import os
 import pathlib
-
 import pandas as pd
 import numpy as np
+import synapseclient
+
+
+def synLogin():
+    # connecting to synapse
+    syn = synapseclient.Synapse()
+
+    # Preset environment variable
+    synToken = os.getenv("SYNTOKEN")
+
+    # login
+    syn.login(authToken=synToken)
+
+    return syn
 
 
 def display_full_table(df: object):
