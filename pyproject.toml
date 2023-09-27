@@ -6,7 +6,7 @@ authors = ["Nicholas Lee"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.9.0,<3.11"
 pandas = "^2.1.0"
 numpy = "^1.25.2"
 ipykernel = "^6.25.2"
