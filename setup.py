@@ -14,6 +14,7 @@ setuptools.setup(
     url="https://github.com/nlee-sage/toolbox",
     project_urls={"Bug Tracker": "https://github.com/nlee-sage/toolbox/issues"},
     license="MIT",
-    packages=["toolbox"],
+    package_dir={"": "toolbox"},
+    packages=find_packages("toolbox"),
     install_requires=["requests"],
 )
